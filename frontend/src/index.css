@@ -1,0 +1,99 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+body{
+  @apply bg-white;
+ 
+}
+form{
+      color: #555353;
+}
+#root{
+ flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+.container {
+  @apply max-w-[1400px] mx-auto px-4 sm:px-10;
+}
+.search {
+  @apply  w-full h-10  mx-auto  border-2 rounded-md max-w-[90%] sm:max-w-full  sm:max-w-sm focus:outline-0 text-sm font-semibold bg-transparent text-slate-900 placeholder:text-white placeholder:font-semibold px-3;
+}
+.search_btn {
+  @apply absolute right-0  sm:right-0 bg-black h-full w-10 sm:w-14 sm:max-w-[56px] rounded-e-md max-w-[40px] flex items-center justify-center duration-300;
+}
+
+/* Form */
+.form_input {
+  @apply py-2 border-0 border-b-[1px] bg-white border-slate-300 placeholder:font-content placeholder:font-medium placeholder:text-sm  focus:border-brand-blue focus:outline-none px-2 w-full text-sm font-content font-semibold;
+}
+
+/* Tostify */
+.Toastify__toast {
+  @apply bg-black;
+}
+.Toastify__toast-body {
+  @apply text-white;
+}
+.Toastify__close-button > svg {
+  @apply text-white;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.slick-dots li {
+  @apply bg-white rounded-full;
+}
+.room_container .slick-list {
+  @apply pb-11 sm:pb-16;
+}
+.room_container .slick-slide {
+  @apply p-3;
+}
+
+.chats_container {
+  height: calc(100vh - 75px);
+}
+
+
+.message_container {
+  height: calc(100vh - 200px);
+}
+footer{
+  margin-top: auto
+}
+
+/* For Webkit-based browsers (Chrome, Safari) */
+.overflow-y-scroll::-webkit-scrollbar {
+  width: 1px; 
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3; 
+  border-radius: 6px; 
+}
+
+.overflow-y-scroll::-webkit-scrollbar-track {
+  background-color: #ffffff; 
+}
+
+/* For Firefox */
+.overflow-y-scroll {
+  scrollbar-width: 1px;
+  scrollbar-color: #a3a3a3 #ffffff;
+}
+
+
+@media screen and (max-width: 500px) {
+  .css-b387i0-MuiDrawer-docked {
+  width: 64px !important;
+}
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
